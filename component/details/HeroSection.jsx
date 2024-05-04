@@ -179,10 +179,10 @@ const HeroSection = ({ recipeInfo }) => {
               </svg>
               <span>Share</span>
             </div>
-            <FacebookShareButton url={""}>
+            <FacebookShareButton url={`https://rnext-a8-khana-khazana.vercel.app/details/${recipeInfo.id}`}>
                 <FacebookIcon/>
               </FacebookShareButton>
-              <LinkedinShareButton url={""}>
+              <LinkedinShareButton url={`https://rnext-a8-khana-khazana.vercel.app/details/${recipeInfo.id}`}>
               <LinkedinIcon/>
               </LinkedinShareButton>
           </div>
