@@ -4,6 +4,7 @@ import {
   replaceMongoIdInArray,
   replaceMongoIdInObject,
 } from "@/utils/data-util";
+import bcrypt from "bcrypt";
 
 async function getAllRecipes() {
   const allRecipes = await recipeModel.find().lean();
@@ -21,14 +22,20 @@ async function getRecipeByCategory(RecipeCategory) {
 }
 
 async function createUser(user) {
-  return await userModel.create(user);
+  const { password, ...userData } = user;
+  const hashedPassword = await bcrypt.hash(password, 10);
+  const userWithHashedPassword = { ...userData, password: hashedPassword };
+  return await userModel.create(userWithHashedPassword);
 }
 
 async function findUserByCredentials(credentials) {
-  const user = await userModel.findOne(credentials).lean();
-
+  const user = await userModel.findOne({email: credentials.email}).lean();
+console.log(user);
   if (user) {
-    return replaceMongoIdInObject(user);
+    const isPasswordCorrect = await bcrypt.compare(credentials.password, user.password);
+    if (isPasswordCorrect) {
+      return replaceMongoIdInObject(user);
+    }
   }
   return null;
 }
