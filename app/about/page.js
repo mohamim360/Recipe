@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import logo from "@/app/assets/images/recipes.jpg"
 const AboutPage = () => {
