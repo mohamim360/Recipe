@@ -14,8 +14,6 @@ Welcome to KhanaKhazana, your go-to destination for exploring and sharing delici
    - [Category Page](#category-page)
 4. [Getting Started](#getting-started)
 5. [Technologies Used](#technologies-used)
-6. [Contributing](#contributing)
-7. [License](#license)
 
 ## Introduction
 KhanaKhazana is a recipe website designed to inspire cooking enthusiasts with a wide range of recipes from different cuisines. Whether you're a seasoned chef or a beginner, you'll find something to satisfy your culinary cravings.
