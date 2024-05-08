@@ -6,8 +6,9 @@ export const metadata = {
 };
 const page = async() => {
 	const allRecipes = await getAllRecipes();
+	const recipePage = 1;
 	return (
-	<Recipe allRecipes={allRecipes}/>
+	<Recipe allRecipes={allRecipes} recipePage={recipePage}/>
 	)
 }
 

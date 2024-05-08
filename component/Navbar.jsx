@@ -1,19 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/assets/images/logo.png"
+import logo from "@/app/assets/images/images.png"
 import SignInOut from "./auth/SignOut";
 import CustomLink from "./CustomLink";
 const Navbar = () => {
   return (
     <nav>
-      <div className="container flex justify-between py-6">
+      <div className="container flex justify-between py-4">
         <Link href="/">
           <Image
             src={logo}
             alt=""
-            width={123}
-            height={40}
-            className="object-cover h-[40px]"
+            width={70}
+            className="object-cover h-[50px]"
           />
         </Link>
 

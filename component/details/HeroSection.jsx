@@ -10,14 +10,14 @@ import {
   FacebookShareButton,
   LinkedinShareButton,
   FacebookIcon,
-  LinkedinIcon
+  LinkedinIcon,
 } from "react-share";
 
 const HeroSection = ({ recipeInfo }) => {
   const { auth, setAuth } = useAuth();
   const currentPage = window.location.href;
   const router = useRouter();
-  const favouritesArray = auth?.favourites;  
+  const favouritesArray = auth?.favourites;
   const isfavourites = favouritesArray?.find((id) => id === recipeInfo?.id);
 
   const [favourites, setFavourites] = useState(isfavourites);
@@ -179,12 +179,25 @@ const HeroSection = ({ recipeInfo }) => {
               </svg>
               <span>Share</span>
             </div>
-            <FacebookShareButton url={`https://rnext-a8-khana-khazana.vercel.app/details/${recipeInfo.id}`}>
-                <FacebookIcon/>
-              </FacebookShareButton>
-              <LinkedinShareButton url={`https://rnext-a8-khana-khazana.vercel.app/details/${recipeInfo.id}`}>
-              <LinkedinIcon/>
-              </LinkedinShareButton>
+            <FacebookShareButton
+              url={`https://rnext-a8-khana-khazana.vercel.app/details/${recipeInfo.id}`}
+            >
+              <FacebookIcon
+                size={24}
+                round={true}
+                style={{ width: "28px", height: "28px" }}
+              />
+            </FacebookShareButton>
+
+            <LinkedinShareButton
+              url={`https://rnext-a8-khana-khazana.vercel.app/details/${recipeInfo.id}`}
+            >
+              <LinkedinIcon
+                size={24}
+                round={true}
+                style={{ width: "28px", height: "28px" }}
+              />
+            </LinkedinShareButton>
           </div>
         </div>
       </div>
