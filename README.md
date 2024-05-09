@@ -1,4 +1,3 @@
-
 # KhanaKhazana Recipe Website
 
 Welcome to KhanaKhazana, your go-to destination for exploring and sharing delicious recipes!
@@ -12,8 +11,11 @@ Welcome to KhanaKhazana, your go-to destination for exploring and sharing delici
    - [Login and Register](#login-and-register)
    - [Recipe Page](#recipe-page)
    - [Category Page](#category-page)
+	- [About Page](#about-page)
 4. [Getting Started](#getting-started)
 5. [Technologies Used](#technologies-used)
+
+---
 
 ## Introduction
 KhanaKhazana is a recipe website designed to inspire cooking enthusiasts with a wide range of recipes from different cuisines. Whether you're a seasoned chef or a beginner, you'll find something to satisfy your culinary cravings.
@@ -25,46 +27,51 @@ KhanaKhazana is a recipe website designed to inspire cooking enthusiasts with a 
 - Categorized recipes for easy navigation and exploration.
 - Favorite button to save recipes for logged-in users.
 - Social media sharing functionality to share recipes with friends and family.
-- Properly updated meta data for improved search engine visibility.
+- Properly updated metadata for improved search engine visibility.
+
+---
 
 ## Pages
 
-![Home Page](app/assets/Capture.PNG)
+### Home Page:
+![Home Page](app/assets/home.PNG)  
+The home page serves as the gateway to the world of recipes. It showcases featured recipes and popular categories, allowing users to easily navigate the website.
 
-### Home Page
-The home page serves as the gateway to the world of recipes. It showcases featured recipes, popular categories. Users can easily navigate to different sections of the website from here.
+### Details Page:
+![Details Page](app/assets/details.PNG)  
+The details page provides in-depth information about a specific recipe, including ingredients, cooking instructions, and nutritional facts. Users can mark recipes as favorites and share them on social media.
 
-![Details Page](app/assets/Capture2.PNG)
+### Login and Register:
+![Login](app/assets/login.PNG) ![Register](app/assets/register.PNG)  
+The login and register pages allow users to create an account or sign in to their existing account, enabling personalized interactions and the ability to save favorite recipes.
 
-### Details Page
-The details page provides in-depth information about a specific recipe. Users can view ingredients, cooking instructions, and nutritional facts. Additionally, logged-in users can mark recipes as favorites for quick access later. The page also includes a share button to spread the joy of cooking on social media platforms.
+### Recipe Page:
+![Recipe Page](app/assets/recipe.PNG)  
+The recipe page displays a collection of recipes based on different categories. Users can explore recipes within their preferred category and access detailed information with just a click.
 
-![Login](app/assets/Ce.PNG) 
-![Register](app/assets/Capture=.PNG)
+### Category Page:
+![Category Page](app/assets/category.PNG)  
+The category page lists recipes belonging to a specific category, allowing users to browse and discover new dishes to try out.
 
-### Login and Register
-The login and register pages allow users to create an account or sign in to their existing account. This feature ensures personalized interactions and enables users to save their favorite recipes.
+### About Page:
+![About Page](app/assets/about.PNG)  
+The About page provides information about the KhanaKhazana website, its mission, and Contact info.
 
-![Recipe Page](app/assets/Capture4.PNG)
+---
 
-### Recipe Page
-The recipe page displays a collection of recipes based on different categories such as breakfast, lunch, dinner, desserts, etc. Users can explore recipes within their preferred category and access recipe details with just a click.
+## Technologies Used
+- `Next.js` for server-side rendering and React components.
+- `MongoDB Atlas` for database hosting and management.
+- `Mongoose` for schema modeling and querying MongoDB.
+- `Tailwind CSS` for styling and layout.
 
-![Category Page](app/assets/Capture6.PNG)
-
-### Category Page
-The category page lists recipes belonging to a specific category. Users can browse through recipes in a particular category and discover new dishes to try out.
 
 ## Getting Started
-To get started with KhanaKhazana, follow these steps:
+To make further improvements, follow these steps:
 1. Clone the repository to your local machine.
 2. Install dependencies using `npm install`.
 3. Set up MongoDB Atlas for database hosting.
-5. Run the development server using `npm run dev`.
-6. Access the website at `http://localhost:3000`.
+4. Run the development server using `npm run dev`.
+5. Access the website at `http://localhost:3000`.
 
-## Technologies Used
-- Next.js for server-side rendering and React components.
-- MongoDB Atlas for database hosting and management.
-- Node.js for server-side logic and API development.
-- Tailwind CSS for styling and layout.
+---

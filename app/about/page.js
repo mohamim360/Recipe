@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import logo from "@/app/assets/images/recipes.jpg"
+import Contact from '@/component/contact';
 const AboutPage = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
@@ -34,7 +35,9 @@ const AboutPage = () => {
         <p className="text-gray-700 mt-4">
           Thank you for being a part of our community. Happy cooking!
         </p>
+        <Contact/>
       </div>
+      
     </div>
   );
 };
