@@ -44,6 +44,7 @@ const HeroSection = ({ recipeInfo }) => {
             width={800}
             height={600}
             className="w-full h-full rounded-lg object-contain"
+            unoptimized
           />
         </div>
         <div className="col-span-12 md:col-span-6 py-8 flex flex-col justify-center">

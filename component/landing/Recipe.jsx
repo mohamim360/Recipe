@@ -16,11 +16,14 @@ const Recipe = ({ allRecipes, recipePage }) => {
             {" "}
             <div className="card">
               <Image
-                src={recipe?.thumbnail || recipe?.image}
+                src={
+                  recipe?.thumbnail || recipe?.image || "/fallback-image.jpg"
+                }
                 width={300}
                 height={160}
                 className="rounded-md"
-                alt=""
+                alt={recipe.name || "Recipe image"}
+                unoptimized
               />
 
               <h4 className="my-2">{recipe.name}</h4>
