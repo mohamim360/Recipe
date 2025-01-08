@@ -16,7 +16,7 @@ const Recipe = ({ allRecipes, recipePage }) => {
             {" "}
             <div className="card">
               <Image
-                src={recipe?.thumbnail || recipe?.image}
+                src={recipe?.image}
                 width={300}
                 height={160}
                 className="rounded-md"
