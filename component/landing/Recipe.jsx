@@ -16,7 +16,7 @@ const Recipe = ({ allRecipes, recipePage }) => {
             {" "}
             <div className="card">
               <Image
-                src="https://source.unsplash.com/random/800x600?recipe"
+                src={recipe?.thumbnail || recipe?.image}
                 width={300}
                 height={160}
                 className="rounded-md"
