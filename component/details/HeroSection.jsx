@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useAuth } from "@/app/hooks/useAuth";
-import Image from "next/image";
 import { useState } from "react";
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
@@ -38,12 +38,13 @@ const HeroSection = ({ recipeInfo }) => {
     <section>
       <div className="grid grid-cols-12 container gap-8 justify-items-center">
         <div className="col-span-12 md:col-span-6">
-          <Image
+          <img
             src={recipeInfo?.image}
             alt=""
             width={800}
             height={600}
             className="w-full h-full rounded-lg object-contain"
+            
           />
         </div>
         <div className="col-span-12 md:col-span-6 py-8 flex flex-col justify-center">

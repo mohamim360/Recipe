@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const Recipe = ({ allRecipes, recipePage }) => {
@@ -15,7 +14,7 @@ const Recipe = ({ allRecipes, recipePage }) => {
           <Link key={recipe.id} href={`/details/${recipe.id}`}>
             {" "}
             <div className="card">
-              <Image
+              <img
                 src={recipe?.image}
                 width={300}
                 height={160}
