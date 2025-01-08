@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Recipe = ({ allRecipes, recipePage }) => {
@@ -14,8 +15,8 @@ const Recipe = ({ allRecipes, recipePage }) => {
           <Link key={recipe.id} href={`/details/${recipe.id}`}>
             {" "}
             <div className="card">
-              <img
-                src={recipe?.image}
+              <Image
+                src="https://source.unsplash.com/random/800x600?recipe"
                 width={300}
                 height={160}
                 className="rounded-md"
