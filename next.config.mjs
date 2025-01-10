@@ -1,7 +1,28 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	images: {
-    domains: ["www.foodandwine.com","www.allrecipes.com","source.unsplash.com","www.averiecooks.com","cdn.loveandlemons.com" ], 
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.foodandwine.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.allrecipes.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.averiecooks.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.loveandlemons.com',
+      },
+    ],
   },
 };
 
